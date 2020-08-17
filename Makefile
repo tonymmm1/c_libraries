@@ -1,0 +1,19 @@
+CFLAGS = -std=gnu89 -Wall -Wextra -fpic
+SOURCE = src
+LIB = lib
+HEADERS = src/libraries.h
+
+all: file_exists.so file_exists.a 
+
+static: file_exists.a
+
+shared: file_exists.so
+
+file_exists.so: $(SOURCE)/file_exists.o 
+	$(CC) $(CFLAGS) -shared -o $(LIB)/$@ $^
+
+file_exists.a: $(SOURCE)/file_exists.o
+	ar -rcs $(LIB)/$@ $^
+
+clean: 
+	rm -rf $(SOURCE)/*.o $(LIB)/*
