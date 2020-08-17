@@ -91,19 +91,6 @@ steps:
 ---
 kind: pipeline
 type: docker
-name: AMD64_CLANG_2.9
-platform:
-  arch: amd64
-
-steps:
-  - name: build
-    image: silkeh/clang:2.9
-    commands:
-      - CC=clang make all
-
----
-kind: pipeline
-type: docker
 name: AMD64_CLANG_3.9
 platform:      
   arch: amd64
