@@ -1,0 +1,193 @@
+kind: pipeline
+type: docker
+name: AMD64_GCC_10
+platform: 
+  arch: amd64
+
+steps:
+  - name: build
+    image: gcc:10
+    commands:
+      - make all
+
+---
+kind: pipeline
+type: docker
+name: AMD64_GCC_9
+platform:
+  arch: amd64
+  
+steps:
+  - name: build
+    image: gcc:9
+    commands:
+      - make all
+
+---
+kind: pipeline
+type: docker
+name: AMD64_GCC_8
+platform:
+  arch: amd64
+  
+steps:
+  - name: build
+    image: gcc:8
+    commands:
+      - make all
+
+---
+kind: pipeline
+type: docker
+name: AMD64_GCC_7
+platform:
+  arch: amd64
+  
+steps:
+  - name: build
+    image: gcc:7
+    commands:
+      - make all
+
+---
+kind: pipeline
+type: docker
+name: AMD64_GCC_6
+platform:
+  arch: amd64
+  
+steps:
+  - name: build
+    image: gcc:6
+    commands:
+      - make all
+
+---
+kind: pipeline
+type: docker
+name: AMD64_GCC_5
+platform:
+  arch: amd64
+  
+steps:
+  - name: build
+    image: gcc:5
+    commands:
+      - make all
+
+---
+kind: pipeline
+type: docker
+name: AMD64_GCC_4
+platform:
+  arch: amd64
+  
+steps:
+  - name: build
+    image: gcc:4
+    commands:
+      - make all
+
+---
+kind: pipeline
+type: docker
+name: AMD64_CLANG_3.9
+platform:      
+  arch: amd64
+
+steps:
+  - name: build
+    image: silkeh/clang:3.9
+    commands:
+      - CC=clang make all
+
+---  
+kind: pipeline
+type: docker
+name: AMD64_CLANG_4
+platform:
+  arch: amd64
+
+steps:
+  - name: build
+    image: silkeh/clang:4
+    commands:
+      - CC=clang make all
+
+---
+kind: pipeline
+type: docker
+name: AMD64_CLANG_5
+platform:
+  arch: amd64
+
+steps:
+  - name: build
+    image: silkeh/clang:5
+    commands:
+      - CC=clang make all
+
+---
+kind: pipeline
+type: docker
+name: AMD64_CLANG_6
+platform:
+  arch: amd64
+
+steps:
+  - name: build
+    image: silkeh/clang:6
+    commands:
+      - CC=clang make all
+
+---
+kind: pipeline
+type: docker
+name: AMD64_CLANG_7
+platform:
+  arch: amd64
+
+steps:
+  - name: build
+    image: silkeh/clang:7
+    commands:
+      - CC=clang make all
+
+---
+kind: pipeline
+type: docker
+name: AMD64_CLANG_8
+platform:
+  arch: amd64
+
+steps:
+  - name: build
+    image: silkeh/clang:8
+    commands:
+      - CC=clang make all
+
+---
+kind: pipeline
+type: docker
+name: AMD64_CLANG_9
+platform:
+  arch: amd64
+
+steps:
+  - name: build
+    image: silkeh/clang:9
+    commands:
+      - CC=clang make all
+
+---
+kind: pipeline
+type: docker
+name: AMD64_CLANG_10
+platform:
+  arch: amd64
+
+steps:
+  - name: build
+    image: silkeh/clang:10
+    commands:
+      - CC=clang make all
