@@ -14,3 +14,5 @@ Example header can be found in the /include directory.
 - [int file_path_exists(const char filepath[PATH_MAX + 1])](https://git.magnatox.com/tonymmm1/c_libraries/src/branch/master/src/file_path_exists.c) - checks if file path exists
 
 - [int file_path_freespace(const char input_filepath[PATH_MAX + 1], const char output_filepath[PATH_MAX + 1])](https://git.magnatox.com/tonymmm1/c_libraries/src/branch/master/src/file_path_freespace.c) - checks if output file path has enough freespace
+
+- [int file_path_creator(const char filepath[PATH_MAX + 1])](https://git.magnatox.com/tonymmm1/c_libraries/src/branch/master/src/file_path_creator.c) - creates file path
