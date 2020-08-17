@@ -1,7 +1,6 @@
 CFLAGS = -std=gnu89 -Wall -Wextra -fpic
 SOURCE = src
 LIB = lib
-HEADERS = src/libraries.h
 
 all: file_exists.so file_exists.a file_path_exists.so file_path_exists.a
 
