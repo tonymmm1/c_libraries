@@ -87,6 +87,3 @@ steps:
     image: gcc:4
     commands:
       - make all
-
----
-
