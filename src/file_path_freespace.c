@@ -3,7 +3,7 @@
 #include <sys/statvfs.h>
 
 /* uses statvfs calls to compare file paths */
-int freespace_checker(const char input_filepath[PATH_MAX + 1], const char output_filepath[PATH_MAX + 1])
+int file_path_freespace(const char input_filepath[PATH_MAX + 1], const char output_filepath[PATH_MAX + 1])
 {
 	size_t input_size, output_avail;	
 	struct statvfs input_statvfs, output_statvfs;
