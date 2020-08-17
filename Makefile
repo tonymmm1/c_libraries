@@ -5,9 +5,9 @@ HEADERS = src/libraries.h
 
 all: file_exists.so file_exists.a file_path_exists.so file_path_exists.a
 
-shared: file_exists.so
+shared: file_exists.so file_path_exists.so
 
-static: file_exists.a
+static: file_exists.a file_path_exists.a
 
 #file_exists
 file_exists.so: $(SOURCE)/file_exists.o 
